@@ -9,6 +9,7 @@ const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
 
 
+
 class Workout {
     date = new Date();
     id = (Date.now() + '').slice(-10);
@@ -89,6 +90,7 @@ class App {
         form.addEventListener('submit', this._newWorkout.bind(this));
         inputType.addEventListener('change', this._toggleElevationField);
         containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
+
         }
 
     _getPosition(){
@@ -257,6 +259,9 @@ class App {
             form.insertAdjacentHTML('afterend', html); //gives the order of appearance in the list
     }
 
+        
+      
+
     _moveToPopup(e){
         const workoutEl = e.target.closest('.workout');
 
@@ -290,8 +295,19 @@ class App {
         localStorage.removeItem('workouts'); //deletes last workouts and app reloads empty
         location.reload();
     }
-    
+
+   
 }
+
+function clearRenders() {
+    const workoutElements = document.querySelectorAll('.workout');
+    workoutElements.forEach((element) => element.remove());
+  }
+  
+//   document.getElementById('clearButton').addEventListener('click', clearRenders);
+  form.insertAdjacentHTML('afterend', '<button id="clearButton">Clear Renders</button>');
+
+  
 
 const app = new App();
 

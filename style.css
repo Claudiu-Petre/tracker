@@ -43,14 +43,15 @@ a:visited {
 /* SIDEBAR */  /*var(--color-dark--1);*/
 .sidebar {
   flex-basis: 50rem;
-  background-image: linear-gradient(to left, rgb(238, 232, 48), orange);
+  background: rgb(137, 134, 134);
   padding: 3rem 5rem 4rem 5rem;
   display: flex;
   flex-direction: column;
 }
 
 .logo {
-  height: 28rem;
+  height: 30rem;
+  width: 40rem;
   align-self: center;
   margin-bottom: 3rem;
 }
