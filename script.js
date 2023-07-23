@@ -291,21 +291,24 @@ class App {
             this._renderWorkout(work);
         });
     }
-    reset(){
+    
+reset(){
         localStorage.removeItem('workouts'); //deletes last workouts and app reloads empty
         location.reload();
-    }
+    };
 
-   
-}
+   _
+};
 
 function clearRenders() {
     const workoutElements = document.querySelectorAll('.workout');
     workoutElements.forEach((element) => element.remove());
   }
   
-//   document.getElementById('clearButton').addEventListener('click', clearRenders);
-  form.insertAdjacentHTML('afterend', '<button id="clearButton">Clear Renders</button>');
+  document.getElementById('clearButton').addEventListener('click', clearRenders);
+ 
+
+//   form.insertAdjacentHTML('afterend', '<button id="clearButton">Reset</button>');
 
   
 
