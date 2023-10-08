@@ -1,10 +1,10 @@
 :root {
-  --color-brand--1: #ffb545;
-  --color-brand--2: #00c46a;
+  --color-brand--1: #ffa723;
+  --color-brand--2: #36ffa1;
 
   --color-dark--1: #b41616;
   --color-dark--2: #373a37;
-  --color-light--1: #a8a1a1;
+  --color-light--1: #d5d5d5;
   --color-light--2: #ececec;
   --color-light--3: rgb(214, 222, 224);
 }
@@ -28,7 +28,7 @@ body {
   height: 100vh;
   overscroll-behavior-y: none;
 
-  background-color: #292727;
+  background-color: #191818;
   padding: 2.5rem;
 
   display: flex;
@@ -43,7 +43,7 @@ a:visited {
 /* SIDEBAR */  /*var(--color-dark--1);*/
 .sidebar {
   flex-basis: 50rem;
-  background: rgb(137, 134, 134);
+  background: rgb(13, 204, 60);
   padding: 3rem 5rem 4rem 5rem;
   display: flex;
   flex-direction: column;
@@ -229,4 +229,15 @@ a:visited {
   display: block;
   justify-content: center;
 
+}
+
+@media screen and (max-width: 1024px){
+  html {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 600px){
+  html {
+    width: 65%;
+  }
 }
