@@ -232,12 +232,12 @@ a:visited {
 }
 
 @media screen and (max-width: 1024px){
-  html {
+:root {
     width: 85%;
   }
 }
 @media screen and (max-width: 600px){
-  html {
-    width: 65%;
+:root {
+    width: 90%;
   }
 }
